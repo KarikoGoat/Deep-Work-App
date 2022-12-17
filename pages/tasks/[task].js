@@ -24,9 +24,8 @@ const Tasks = ({ id }) => {
 
   return (
     <>
-      <CurrentTask currentTaskPath={[{name: "Tasks", id: undefined}]}/>
-      <div className="absolute top-32 left-0 right-0">
-        <CurrentTask currentTaskPath={currentTaskPath}/>
+      <CurrentTask currentTaskPath={currentTaskPath}/>
+      <div className="absolute top-32 left-0 right-0">  
         <Task key={task.id} id={task.id} task={task} />
         <CreateTaskPopup trigger={createTaskButton} setTrigger={setCreateTaskButton} />
         <CreatePreset setTrigger={setCreateTaskButton} text='Create Task' />

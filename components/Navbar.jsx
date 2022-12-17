@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NavbarButton from "./buttons/NavbarButton";
 import clockIcon from '../public/clockIcon.svg';
 import clockIconFill from '../public/clockIconFill.svg';

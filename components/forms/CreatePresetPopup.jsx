@@ -36,7 +36,7 @@ const CreatePresetPopup = (props) => {
                   .max(30, "Must be 30 characters or less")
                   .required("Required")
               })}
-              onSubmit={(values, { setSubmitting }) => {
+              onSubmit={(values) => {
                 values.presetTime =                      
                   Number(values.presetTimeSeconds) + 
                   Number(values.presetTimeMinutes) * 60 + 
